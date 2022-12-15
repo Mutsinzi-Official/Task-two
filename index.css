@@ -29,10 +29,10 @@ width: 100%;
   padding: 10px;
   margin: 5px 5px 5px 5px; 
   border-radius: 1%;
-  border-left:2px faint black;
-  border-right:2px faint black;
-  border-top:2px faint black;
-  border-bottom:2px faint black;
+  border-left:2px black;
+  border-right:2px black;
+  border-top:2px black;
+  border-bottom:2px black;
   height: 550px;
  } 
  
