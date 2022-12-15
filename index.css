@@ -53,7 +53,7 @@ width: 100%;
 
 .container .content {
   position: absolute; 
-  Top : 50; 
+  Top : 0; 
   width: 100%; 
   padding: 20px; 
 }
