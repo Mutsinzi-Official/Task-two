@@ -53,9 +53,9 @@ width: 100%;
 
 .container .content {
   position: center; 
-  top: 10; 
+  Top: 50;
   width: 100%; 
-  padding: 0px; 
+  padding: 20px; 
 }
 
 button {
