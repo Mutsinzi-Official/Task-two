@@ -52,8 +52,8 @@ width: 100%;
 }
 
 .container .content {
-  position: center; 
-  Top: 50;
+  position: absolute; 
+  Top : 50; 
   width: 100%; 
   padding: 20px; 
 }
