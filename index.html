@@ -1,77 +1,97 @@
 <!DOCTYPE html>
-
-<html lang='' en''>
-
-<head>
-
-<meta charset=''UTF-8'' />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="index.css" /> 
-<title>site3</title>
-
-</head>
-
-<body>
-<div class=''page''>
-<div class=''menu''>
-	
+<html>
+  <head>
+  	<meta charset=''UTF-8'' />
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+     <link rel="stylesheet" type="text/css" href="index.css" /> 
+    <title>site3</title>
+      <style>
+    #slides {
+      display: flex;
+    }
+    #slide {
+      flex: 1 0 100%;
+      display: none;
+      transition: all 3s;
+    }
+    #slide.active {
+      display: block;
+    }
+  </style>
+  <script>
+    window.onload = function() {
+      var slides = document.querySelectorAll('#slide');
+      var currentSlide = 0;
+      setInterval(function() {
+        slides[currentSlide].className = 'slide';
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].className = 'slide active';
+      }, 2000);
+    }
+  </script>
+  </head>
+  <body>
+  	<div class="container-1">
+  	<div class=''page''>
+     <div class=''menu''>
 	<div class="container">
-        <img src="IMG-20221214-WA0029.jpg" alt="Image" style="width:100%; height: 400px">
-        <div class="content">
+  <img src="IMG-20221214-WA0029.jpg" alt="Image" style="width:100%; height: 400px">
+  <div class="content">
   	<p style="float: center">
     <h1>Welcome to Mutsinzi Store</h1>
     <p>We deliver service beyond self </p>
-    <button type="button">Shop Now</button>
+    <button style="background-color: blue; color: white; border: none; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;">Shop Now</button>
     </p>
   </div>
-</div>
-	
-<div class="row">
-  <div class="column" >
-  	<img src="IMG-20221214-WA0031.jpg" style="width: 100%"; style="height: 100%"/> 
+</div> 
+ </div>
+ </div>
+ </div>
+ 
+    <div id="container-2">
+    	<div class="row">
+  <div class="column">
+  	<img src="IMG-20221214-WA0031.jpg" style="width: 100%"; style="height: 100%" /> 
   <h4>Card title </h4>
      <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <button type="button1">Shop</button>
+      <button type="button">Shop</button>
   </div>
   
   <div class="column" >
-   	<img src="IMG-20221214-WA0030.jpg" style="width: 100%"; style="height: 100%"/>
+   	<img src="IMG-20221214-WA0030.jpg" style="width: 100%"; style="height: 100%"  />
   <h4>Card title </h4>
      <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-     <button type="button1">Shop</button>
+     <button type="button">Shop</button>
   </div>
   
   <div class="column">
-   	<img src="IMG-20221214-WA0035.jpg" style="width: 100%"; style="height: 100%"/>
+   	<img src="IMG-20221214-WA0035.jpg"style="width: 100%"; style="height: 100%"   />
  <h4>Card title </h4>
      <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
-     <button type="button1">Shop</button>
-  </div>
+     <button type="button">Shop</button>
 </div>
-<br>
-<br>
-
-<div class="content"> </br>
-	<h2>A brief About us<h2/>
+</div>
+ </div>
+    
+    <div id="container-3">
+    	<h2>A brief About us</h2>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente impedit commodi molestiae, nihil temporibus ipsam quia, exercitationem, perspiciatis at fuga ipsum! Magni, maxime adipisci tempore eos non velit aspernatur blanditiis! lorem <p/>
 </div>
-<br>
-<br>
-<br>
-
-<div class=''content''>
-	 <p style="float: left">
-		   <a href="home.html"> Home </a> |
+    
+    <div id="container-4">
+    	 <p style="float: left">
+		   <a href="home.html"> Home </a>|
            <a href="About.html"> Contact </a> 
     </p>
     <br>
 	<br>
-	<h4 class="ex1" >Happy Customers<h4/>
+	<h4>Happy Customers<h4/>
 	
-
 		<!-- Slideshow container -->
-<div class="slideshow-container">
-  <div class="mySlides-fade">
+
+    <div class="content">
+  <div id="slides">
+    <div id="slide" class="active">
  <div class="avatar-container">
   <img src="IMG-20221214-WA0033.jpg" alt="Avatar" class="avatar-img">
   <div class="content">
@@ -79,8 +99,9 @@
     <p> </p>
   </div>
 </div>
+</div>
 
-<div class="mySlides-fade">
+   <div id="slide">
   <div class="avatar-container">
   <img src="IMG-20221214-WA0032.jpg" alt="Avatar" class="avatar-img">
   <div class="content">
@@ -88,9 +109,10 @@
     <p> </p>
   </div>
 </div>
+</div>
 
-<div class="mySlides-fade">
-   <div class="avatar-container">
+   <div id="slide">
+  <div class="avatar-container">
   <img src="IMG-20221214-WA0034.jpg" alt="Avatar" class="avatar-img">
   <div class="content">
     <h3 class="ex1">Third Slide</h3>
@@ -98,8 +120,11 @@
   </div>
 </div>
 </div>
+</div>
+</div>
 
-<div class="footer">
+
+<div class="container-5">
 	<div class="row">
   <div class="column"style="width: 45%"; style="height: 50px"/>
   	<p>Support </p>
@@ -122,6 +147,8 @@
    
 </div>
 </div>
-<footer/>
-</body>
+</div>
+    
+ 
+  </body>
 </html>
