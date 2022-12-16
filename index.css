@@ -82,6 +82,12 @@ button {
         display: inline-block;
         font-size: 16px;
  } 
+
+.parent {
+
+    text-align: center;
+
+  }
  
  
     /* Style the avatar container */
