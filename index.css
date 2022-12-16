@@ -87,7 +87,7 @@ button {
     /* Style the avatar container */
 .avatar-container {
         width: 200px;
-        height: 100%;
+        height: 200px;
         border-radius: 50%;
         overflow: hidden;
         margin: auto;
