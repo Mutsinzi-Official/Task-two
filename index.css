@@ -38,7 +38,7 @@ box-sizing: border-box;
   position: absolute; 
   Top : 50; 
   width: 100%; 
-  padding: 0px; 
+  padding: -10px; 
 }
 
 
