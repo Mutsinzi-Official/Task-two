@@ -50,25 +50,25 @@ box-sizing: border-box;
 
 .container-2 {
   color: white;
-  height: 600px; 
+  height: 400px; 
   width: 100%;
 }
 
 .container-3 {
   color: white;
-  height: 400px; 
+  height: 300px; 
   width: 100%;
 }
 
 .container-4 {
   color: black;
-  height: 900px; 
+  height: 400px; 
   width: 100%;
 }
 
 .container-5 {
   color: white;
-  height: 50px; 
+  height: 100px; 
   width: 100%;
 }
 
@@ -87,7 +87,7 @@ button {
     /* Style the avatar container */
 .avatar-container {
         width: 200px;
-        height: 200px;
+        height: 100%;
         border-radius: 50%;
         overflow: hidden;
         margin: auto;
