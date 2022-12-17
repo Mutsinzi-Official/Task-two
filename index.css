@@ -1,12 +1,16 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	width: 100%;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+width: 600px;
 } 
+
  .image {
   position: relative;
 }
@@ -20,9 +24,28 @@ body {
   text-size: 10px;
 }
 
-/* three equal columns that floats next to each other */
+#container-1 {
+  height: 450px; 
+  width: 700px;
+}
 
- .column{
+.parent {
+    text-align: center;
+  }
+ 
+ .my-class {
+  /* declarations */
+  margin: 0 auto;
+}
+
+.container-2 {
+  padding-top: 20px;
+  color: white;
+  height: 500px; 
+  width: 700px;
+}
+
+.column{
   float: left;
   width: 30%;
   padding: 10px;
@@ -30,46 +53,19 @@ body {
   border-radius: 1%;
   border:2px solid black;
  }
-
-.column {
-  flex: 1;
-}
-
-/* styling containers */
-.container-1 {
-  height: 450px; 
-  width: 100%;
-}
-
-.container-2 {
-  color: white;
-  height: 550px; 
-  width: 100%;
-}
-
+ 
 .container-3 {
   color: white;
   height: 400px; 
-  width: 100%;
+  width: 700px;
 }
 
 .container-4 {
   color: black;
   height: 400px; 
-  width: 100%;
+  width: 700px;
 }
 
-.container-5 {
-  color: white;
-  height: 100px; 
-  width: 100%;
-}
- 
-.parent {
-    text-align: center;
-  } 
- 
- 
     /* Style the avatar container */
 .avatar-container {
         width: 200px;
@@ -84,3 +80,8 @@ body {
  width: 100%;
  }
 
+.container-5 {
+  color: white;
+  height: 100px; 
+  width: 700px;
+}
