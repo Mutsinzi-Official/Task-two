@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset=''UTF-8'' />
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+     <link rel="stylesheet" type="text/css" href="index.css" /> 
+    <title>Mutsinzi Store</title>
+      <style>
+    #slides {
+      display: flex;
+    }
+    #slide {
+      flex: 1 0 100%;
+      display: none;
+      transition: all 3s;
+    }
+    #slide.active {
+      display: block;
+    }
+  </style>
+  <script>
+    window.onload = function() {
+      var slides = document.querySelectorAll('#slide');
+      var currentSlide = 0;
+      setInterval(function() {
+        slides[currentSlide].className = 'slide';
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].className = 'slide active';
+      }, 2000);
+    }
+  </script>
+  </head>
+  <body>
+  	<div class="container-1">
+  	<div class=''page''>
+     <div class=''menu''>
+	<div class="container">
+  <img src="IMG-20221214-WA0029.jpg" alt="Image" style="width:100%; height: 100%">
+  <div class="content">
+    <h3 style="text-align: center" >Welcome to MUTSINZI Store</h3><br>
+    <p style="text-align: center; margin: 0 auto; width: 50%" >We deliver service beyond self </p>
+    <div class="parent">
+    <button class="style="border-color: 2px blue ; color: blue ; border:none;  text-align: center; text-decoration: none; display: inline-block; font-size: 16px;">Shop Now</button>
+  </div>
+    </div>
+</div> 
+ </div>
+ </div>
+ </div>
+ 
+    <div id="container-2">
+    	<div class="row">
+  <div class="column">
+  	<img src="IMG-20221214-WA0031.jpg" style="width: 100%"; style="height: 100%" /> 
+  <h4>Card title </h4>
+     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <button style="background-color:blue; color: white; bottom:10; border: none; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;">Shop</button>
+  </div>
+  
+  <div class="column" >
+   	<img src="IMG-20221214-WA0030.jpg" style="width: 100%"; style="height: 100%"  />
+  <h4>Card title </h4>
+     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+     <button style="background-color: blue; color: white; bottom:10; border: none; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;">Shop</button>
+  </div>
+  
+  <div class="column">
+   	<img src="IMG-20221214-WA0035.jpg"style="width: 100%"; style="height: 100%"   />
+ <h4>Card title </h4>
+     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+     <button style="background-color: blue; color: white; bottom:10; border: none; padding: 15px 15px 15px 15px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;">Shop</button>
+</div>
+</div>
+ </div>
+    
+    <div id="container-3">
+    	<h2>A brief About us</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente impedit commodi molestiae, nihil temporibus ipsam quia, exercitationem, perspiciatis at fuga ipsum! Magni, maxime adipisci tempore eos non velit aspernatur blanditiis! lorem <p/>
+</div>
+    
+    <div id="container-4">
+    	 <p style="float: left">
+		   <a href="home.html"> Home </a>|
+           <a href="About.html"> Contact </a> 
+    </p>
+    <br>
+	<br>
+	<h4>Happy Customers<h4/>
+	
+		<!-- Slideshow container -->
+
+    <div class="content">
+  <div id="slides">
+    <div id="slide" class="active">
+ <div class="avatar-container">
+  <img src="IMG-20221214-WA0033.jpg" alt="Avatar" class="avatar-img">
+<div class="content">
+    <h3 style="text-align: center; bottom: 10" > First Slide</h3>
+    <p> </p>
+  </div>
+</div>
+</div>
+
+   <div id="slide">
+  <div class="avatar-container">
+  <img src="IMG-20221214-WA0032.jpg" alt="Avatar" class="avatar-img">
+  <div class="content">
+    <h3 class="ex1">Second Slide</h3>
+    <p> </p>
+  </div>
+</div>
+</div>
+
+   <div id="slide">
+  <div class="avatar-container">
+  <img src="IMG-20221214-WA0034.jpg" alt="Avatar" class="avatar-img">
+  <div class="content">
+    <h3 class="ex1">Third Slide</h3>
+    <p> </p>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container">
+  <div class="column" style="width: 45%; border-color: white" "> 
+  	<p> Support </p>
+           <a href="contact.html">  Contact Us </a> <br>
+           <a href="Email.html"> support@company.com </a> 
+  </div>
+  
+		 <div class="column" style="width: 45%; border-color: white" >   
+				<p> Company</p>
+           <a href="about_us.html">  About Us </a>  <br>
+           <a href="privacy_policy.html"> Privacy Policy </a> <br>
+           <a href="terms_of_service.html">  Terms Of Service </a>  <br>
+           <a href="faqs.html"> FAQs </a>  <br>
+           <a href="cancellation.html">  Cancellation/Rescheduling policy </a> 
+</div>
+</div>
+   
+ 
+  </body>
+</html>
