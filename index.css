@@ -4,8 +4,24 @@ padding: 0;
 box-sizing: border-box;
 }
 
+body {
+	width: 100%;
+} 
+ .image {
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-size: 10px;
+}
+
 /* three equal columns that floats next to each other */
- 
+
  .column{
   float: left;
   width: 30%;
@@ -14,33 +30,10 @@ box-sizing: border-box;
   border-radius: 1%;
   border:2px solid black;
  }
- 
-.container .colomn{
-  display: flex;
-  width: 100%; 
-}
 
 .column {
-  flex: 2;
+  flex: 1;
 }
-
- 
-
- /* putting image to background in header */
- 
-.container {
-  position: relative;
-  max-width: 800px; 
-  margin: 0 auto;
-}
-
-.container .content {
-  position: absolute; 
-  Top : 50; 
-  width: 100%; 
-  padding: 20px; 
-}
-
 
 /* styling containers */
 .container-1 {
@@ -71,16 +64,6 @@ box-sizing: border-box;
   height: 100px; 
   width: 100%;
 }
-
-
-button {
-	bottom:10;
-  border-color: blue;
-  color: blue;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
- } 
  
 .parent {
     text-align: center;
@@ -101,27 +84,3 @@ button {
  width: 100%;
  }
 
-     /* Mobile Styles */
-
-@media only screen and (max-width: 400px) {
-body {
-background-color: #F09A9D; /* Red */
-width: 100%;
-}
-}
-
-/* Tablet Styles */
-
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-	body {
- background-color: ; /* Yellow */
-}
-}
-
-/* Desktop Styles */
-
-@media only screen and (min-width: 961px) {
-body {
-background-color:; /* Blue */
-}
-}
