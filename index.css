@@ -6,27 +6,25 @@
 
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-width: 600px;
+width: 100%;
 } 
 
  .image {
   position: relative;
+   object-fit: contain;
+   object-position: center;
 }
 
 .text {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 20%;
   z-index: 1;
-  text-size: 10px;
 }
 
 #container-1 {
   height: 450px; 
-  width: 700px;
+  width: 100%;
 }
 
 .parent {
@@ -36,6 +34,7 @@ width: 600px;
  .my-class {
   /* declarations */
   margin: 0 auto;
+  text-size:10px;
 }
 
 .container-2 {
@@ -84,4 +83,11 @@ width: 600px;
   color: white;
   height: 100px; 
   width: 700px;
+}
+
+#column {
+  float: left;
+  width: 45%;
+  height: 100px;
+  margin: 0 5px;
 }
